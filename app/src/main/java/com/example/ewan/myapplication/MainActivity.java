@@ -1,5 +1,7 @@
 package com.example.ewan.myapplication;
-
+/**
+ * @param 广播实现强制下线功能
+ * */
 
 import android.content.Intent;
 import android.os.Bundle;
