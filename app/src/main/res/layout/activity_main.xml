@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ewan.myapplication.MainActivity">
+    <!--绘制水平移动的小球-->
+    <!-- <com.example.ewan.myapplication.view.BallMoveView
+         android:id="@+id/ballMoveView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+    <!--绘制平移、缩放、钟表盘-->
+    <!-- <com.example.ewan.myapplication.view.CoordinateView
+         android:id="@+id/coorDinateView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+    <!--裁剪-->
+    <!-- <com.example.ewan.myapplication.view.ClipView
+         android:id="@+id/clipView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />-->
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send"
+        android:textAllCaps="false" />
+</LinearLayout>
