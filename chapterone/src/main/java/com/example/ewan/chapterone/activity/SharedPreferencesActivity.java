@@ -28,7 +28,7 @@ public class SharedPreferencesActivity extends BaseActivity implements View.OnCl
         /**
          * 一定要在onCreate方法里面进行判断
          * */
-        sharedPreferences= PreferenceManager.getDefaultSharedPreferences(this);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         boolean isRemember = sharedPreferences.getBoolean("isRemember", false);
         if (isRemember) {
             String account = sharedPreferences.getString("account", "");
@@ -73,20 +73,20 @@ public class SharedPreferencesActivity extends BaseActivity implements View.OnCl
     private void check() {
         String name = et_name.getText().toString();
         String pwd = et_password.getText().toString();
-        if(name.equals("admin")&&pwd.equals("123456")){
-            editor=sharedPreferences.edit();
-            if(cb_remember.isChecked()){
-                editor.putBoolean("isRemember",true);
-                editor.putString("account",name);
-                editor.putString("password",pwd);
-            }else {
+        if (name.equals("admin") && pwd.equals("123456")) {
+            editor = sharedPreferences.edit();
+            if (cb_remember.isChecked()) {
+                editor.putBoolean("isRemember", true);
+                editor.putString("account", name);
+                editor.putString("password", pwd);
+            } else {
                 editor.clear();
             }
             editor.apply();
             startActivity(new Intent(SharedPreferencesActivity.this, TestActivity.class));
             finish();
-        }else {
-            Toast.makeText(this,"account or password is invalid",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "account or password is invalid", Toast.LENGTH_SHORT).show();
         }
     }
 }

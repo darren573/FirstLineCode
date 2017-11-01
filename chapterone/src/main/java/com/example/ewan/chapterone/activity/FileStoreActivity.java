@@ -66,7 +66,7 @@ public class FileStoreActivity extends BaseActivity {
     }
 
     /**
-     * 把数据保存到文件中
+     * 读取数据
      */
     public String read() {
         FileInputStream in = null;

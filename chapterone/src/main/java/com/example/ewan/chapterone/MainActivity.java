@@ -2,8 +2,6 @@ package com.example.ewan.chapterone;
 /**
  * @param 数据持久化
  */
-
-;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
